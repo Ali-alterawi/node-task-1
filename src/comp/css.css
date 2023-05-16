@@ -1,0 +1,9 @@
+.max-w-screen-2xl {
+    max-width: 1600px;}
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1rem;
+        margin: 0 auto;
+    }

@@ -1,25 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+// import axios from 'axios';
+// import React, { useEffect, useState } from 'react';
+import  Navbar  from './comp/Navbar';
+import Button from './comp/Button';
+import Slider from './comp/Slider';
+// import Cards from './comp/Cards';
+import Footer from './comp/Footer';
+import Cards from './comp/Cards';
 
-function App() {
+// function App() {
+
+//   const[Data,setData] = useState(null)
+//   const fetchData =()=>{
+//     axios.get('http://localhost:5000')
+//   .then(res => {
+//     setData(res.data)
+//   })
+
+//   }
+
+//   useEffect(()=>{
+//     fetchData()
+
+//   },[])
+//   return (
+//     <div className="App">
+
+// <h3>{Data}</h3>
+//     </div>
+//   );
+// }
+// export default App;
+
+import React from "react";
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar/>
+      <Slider/>
+      <Cards/>
+      <Button/>
+      <Footer/>
     </div>
   );
-}
+};
 
 export default App;
