@@ -7,6 +7,7 @@ import Slider from './comp/Slider';
 // import Cards from './comp/Cards';
 import Footer from './comp/Footer';
 import Cards from './comp/Cards';
+import Search from './comp/Search';
 
 // function App() {
 
@@ -40,6 +41,7 @@ const App = () => {
     <div>
       <Navbar/>
       <Slider/>
+      {/* <Search/> */}
       <Cards/>
       <Button/>
       <Footer/>

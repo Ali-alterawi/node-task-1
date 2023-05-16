@@ -5,29 +5,16 @@ import {
   CardFooter,
   Typography,
   Button,
-  Tooltip,
   IconButton,
 } from "@material-tailwind/react";
-import {
-  BanknotesIcon,
-  StarIcon,
-  HeartIcon,
-  WifiIcon,
-  HomeIcon,
-  TvIcon,
-  FireIcon,
-} from "@heroicons/react/24/solid";
+import { StarIcon, HeartIcon } from "@heroicons/react/24/solid";
 
 export default function Example(props) {
   return (
     <div>
-        
-      <Card className="flex justify-center  max-w-[26rem] shadow-lg mx-auto  px-auto py-3">
+      <Card className="flex justify-center max-w-[26rem] shadow-lg mx-auto  px-auto py-3">
         <CardHeader floated={false} color="blue-gray">
-          <img
-            src={props.e.image}
-            alt="ui/ux review check"
-          />
+          <img src={props.e.image} alt="ui/ux review check" />
           <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
           <IconButton
             size="sm"
@@ -51,10 +38,7 @@ export default function Example(props) {
               {props.e.rating}
             </Typography>
           </div>
-          <Typography color="gray">
-            {props.e.description}
-          </Typography>
-          
+          <Typography color="gray">{props.e.description}</Typography>
         </CardBody>
         <CardFooter className="pt-3">
           <Button size="lg" fullWidth={true}>
